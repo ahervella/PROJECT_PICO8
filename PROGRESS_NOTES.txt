@@ -1,0 +1,140 @@
+-----PLANNING BRAINSTORMING-----
+- create a custom font sprite sprite
+
+- object file that can have init, update, and draw funcs
+
+- create actor:object file and api and table
+    - collision box
+    - accel
+    - decel?
+    - max speed
+    - direction
+    - move
+    - get_currSpeed
+    - anims
+        - given a direction and speed, animate
+
+    - player is extension of actor width
+    - moving_actor:object for bullets and enemy:moving_actor
+        - direction
+        - enemies have: target(actor), turn speed
+
+- animator file and api
+    - anim:object sub table
+        - frames
+        - frame rate
+        - color tinter
+        - offset
+        - blink (alpha steps, rate, etc.)
+    - anim manager?
+
+- create a collision:object file and api
+    - width, height
+    - i frame timer
+
+- create a vfx file and api for shots, death, etc.
+
+
+
+-----CONTROLS----- (+ --  O X)
+- arrow directions = move in desired direction
+- X = fire right
+- O = fire left
+- hold X or O for a charge shots
+- 
+- X+O double press = ???
+
+-----PROTOTYPE STEPS FOR PROOF OF CONCEPT-----
+1) move the player around
+2) character rotate to a direction with sprite
+3) character shoot projectile in direction
+4) character be able to strafe
+5) distructable static enemies with projectile
+6) camera follows player
+7) enemies follow player
+8) enemies spawn periodically from descrete locations
+
+- make obstacles
+- make score
+- make camera shake and other effects
+- animation system
+
+
+
+NEXT:
+1) Get enemy to be destroyed by bullet
+2) Make enemy turn to face player
+3) make enemy follow player + accelerate player more
+4) spawn enenmys from outside camera
+
+
+TODO:
+- need to figure out the eventual problem of wanting arrays in zobject declaration
+- and making sure we make those tables unique per obj instance (like the problem we had with
+layerWrappers)
+
+
+NEXT DEC (from second to last time):
+- need to find a way to move to edge of wall when moving greater than 1 px / frame
+- redo brake logic in player
+        
+NEXT
+- camera:
+    - give camera leeway of a tiny square in the center before it moves
+    - to the target offset (use the ZMovable stuff once its been modified
+    - to have the shit below) 
+
+- enemy has max speed, accel time, decel time
+- camera has target offset location, otherwise follows player
+    - also has max speed, accel time, decel time
+
+
+I'm tired right now, and I know I'm tired right now. And I know there's been so many brilliant minds before me, for me to do this is the living proof of all of those people, this is the result of them, I am the result of them.
+
+Woz has been an inspiration not because just of what he did, but his outlook. He did the project for the sake of using it. He didn't plan for this stuff.
+
+I feel like my whole life I've been trying to fufill this path that I can see unfolding for the rest of my life and I'm never happy with it. There are so many forces at play that I feel like are constantly trying to leave me there, whether it be responsibilities of family, of income, of social connection, of health, and I'm so tired of all of it. I wish I could go away for a while by myself, be by myself for a long time before coming back. I feel so much anxiety keeping up with this and I know when in scarcity I crave it. 
+
+I am always asking myself, how can I reshape my everyday to get away from these things, how can I set more time for the things I am trying to do? How can I stop feeling fomo, to stop needing to find a relationship, to stop feeling obligated. To stop feeling so much guilt.
+
+I admire woz because he seems like someone who did just that, or at least painted it to be that way. Despite all other forces he persued his happiness and made it stick.
+
+In sum, I know there are so many more people out there smarter than me, that have done more than me at a younger age, maybe in a past time, that can do more than me, and that will do more than me, but god damn it that doesn't mean I can't try to do the best I can for myself. It doesn't mean I should ever give up trying to do it myself. I am an artist. I am an engineer. I am a story teller. I am someone who will make the story. And even if this game is just at a loss, by god at least I'll have made something in these trying times, in this reluctance, confusion, fatigue and sleep depriviation. I will have at least.
+
+
+
+
+
+
+
+NEXT (MAY)
+- why does the goood print multiple times per object? Whats going on there, and why does the nil check there not work?
+- get camera target offset smooth transition depending on player facing working
+- eventually get monster to stop once contact made with player to not push forever
+
+NEXT ( MAY 28th)
+- figured out that the print was multiple times due to when we create the class prototype
+- realized the post new on moveable wasn't working because of order of ops when you do NOT before a nil value, it can invert the default of false to true
+- do camera stuff from last May notes
+
+
+
+Aug 5th
+- address todo for flip moveable
+- implement target ref logic from zenemy into zmoveable
+- test working with enemy before doing cam
+- is this good or should we try component model version?
+
+
+
+Aug 10th
+- smoothing looking good for camera offset!
+    - speed it up a big for getting there, and decel should be slower
+
+- implement target logic with enemey
+    - if targetting player to be within a time window, set a target delay of at least that (so maybe also add a reattack delay)
+    
+
+September 1st
+- stop rev vel from taking place once changing target ref for camera (clear curr vel values once limit reached)
+- do shit from last notes point
