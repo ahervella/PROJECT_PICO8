@@ -3,15 +3,15 @@ This is a PICO-8 game project in progress on and off. I chose this very loose, l
 
 For more info on this work, please feel free to message me at ahervella@me.com!
 
-# Game Concept
+## Game Concept
 The game concept is a top down 2D shooter with the goal of being a sweaty and intense fire fight, arcade-like experience. But unlike most top down 2D shooters, the goal is by no means to make a bullet hell, but instead make shooting every shot be powerful and impactful, give the player and enemies weight and strength, but allow the player to manuver easily in short bursts. Much of this was inspired by the way enemy fights work in The Last of Us, in which the player is focused on positioning, ammo management, and making every shot count!
 
-# Project Goal
+## Project Goal
 At the time of inception, I was very interested in learning and understanding how games were made prior to the concept of game engines. I wanted to take a step back from diving into giant complex engines like Unity and Unreal, and learn more about how NES, SNES, ATARI, and other early 2D era games were created in assembley and other low level languages designed around unique chip series (65c816 for SNES for instance).
 
 PICO-8 was the perfect answer to this endeavor by providing the "fantasy console" environment, a great stepping stone and intro into the world of assembley and low level game development without the need for memorizing and working with unique addresses while providing a foundational library of tools to build off, not too unline my CPP Galaga remake project that was made with the SDL2 library. Only this time, using LUA takes this a step further by having the programmer establish OOP flows, contracts, and systems.
 
-# Programmoging with LUA
+## Programmoging with LUA
 Lua is a lose scripting language with powerful and unique features from other languages I've used. It's interesting nature of tables, meta tables, and their linkedlist style architecture allows for a programmer to be able to create concepts of inheritance and OOP. This I learned by reading the LUA manual and through lots of trial and error using very basic debugging tools offered by the PICO-8 engine.
 
 As the project stands, a few systems have been created and proven working:
