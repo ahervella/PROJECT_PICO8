@@ -18,7 +18,7 @@ At the time of inception, I was very interested in learning and understanding ho
 
 [PICO-8](https://www.lexaloffle.com/pico-8.php) was the perfect answer to this endeavor by providing the "fantasy console" environment, a great stepping stone and intro into the world of assembley and low level game development without the need for memorizing and working with unique addresses while providing a foundational library of tools to build off, not too unlike my [C++ Galaga remake project](https://github.com/ahervella/GALAGA_CPP_REMAKE_2020) that was made with the SDL2 library. Only this time, using Lua takes this a step further by having the programmer establish OOP flows, contracts, and systems.
 
-## Programmging with Lua
+## Progress Programmging with Lua
 [Lua](https://www.lua.org/) is a lose scripting language with powerful and unique features from other languages I've used. It's interesting nature of tables, meta tables, and their linked list style architecture allows for a programmer to be able to create concepts of inheritance and OOP. This I learned by reading the Lua manual and through lots of trial and error using very basic debugging tools offered by the PICO-8 engine.
 
 As the project stands, a few systems have been created and proven working:
