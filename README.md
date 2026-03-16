@@ -3,6 +3,13 @@ This is a [PICO-8](https://www.lexaloffle.com/pico-8.php) game project in progre
 
 For more info on this work, please feel free to message me at ahervella@me.com!
 
+Concept art of game with proper dimensions of PICO-8:
+
+<img width="256" height="256" alt="Untitled" src="https://github.com/user-attachments/assets/10f24531-4b97-4c6b-91c4-22932a02bd08" />
+<img width="256" height="256" alt="Untitled" src="https://github.com/user-attachments/assets/f577e882-7497-4bbf-8791-b69ac4ee5858" />
+
+
+
 ## Game Concept
 The game concept is a top down 2D shooter with the goal of being a sweaty and intense fire fight, arcade-like experience. But unlike most top down 2D shooters, the goal is by no means to make a bullet hell, but instead make shooting every shot be powerful and impactful, give the player and enemies weight and strength, but allow the player to maneuver easily in short bursts. Much of this was inspired by the way enemy fights work in The Last of Us, in which the player is focused on positioning, ammo management, and making every shot count!
 
