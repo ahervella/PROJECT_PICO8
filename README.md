@@ -3,6 +3,8 @@ This is a [PICO-8](https://www.lexaloffle.com/pico-8.php) game project in progre
 
 For more info on this work, please feel free to message me at ahervella@me.com!
 
+You might notice right away my prefix nomenclature for helping me identify types in this duck-typed, which I know can be frowned upon in professional settings. **One of my next steps is to switch this over to a typed wrapper/preprocessor language to remove and resolve this, like [Teal](https://github.com/teal-language/), given given the growing scope**
+
 Concept art of game with proper dimensions of PICO-8:
 
 <img width="256" height="256" alt="Untitled" src="https://github.com/user-attachments/assets/10f24531-4b97-4c6b-91c4-22932a02bd08" />
@@ -25,9 +27,11 @@ As the project stands, a few systems have been created and proven working:
 
 1. Nomenclature semantics:
    - Since Lua uses duck typing, I decided to establish a nomenclature system to make working with variables easier by using abbreviated prefixes like n_, b_, or v2_ for things like number, bool, or vector 2.
+     - **As previously mentioned, I hope to switch this over to a typed wrapper/preprocessor language to remove and resolve this, like [Teal](https://github.com/teal-language/), given given the growing scope**
    - I also was sure to make functions have a __ (double underscore) prefix to further clarify code use and intentions.
    - Parameters of functions start with a single _ (underscore)
    - Constants are all caps! All of these are very similar to habits adopted in C++ and C# programming
+   
 
 2. Basic class system:
    - Using the Lua manual, I devised a series of ZObject classes that build off each other with inheritance
